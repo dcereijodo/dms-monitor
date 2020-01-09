@@ -4,14 +4,21 @@ Start AWS Database Migration Service (DMS) tasks and wait for completion.
 
 # Installation and testing
 Install the tool as CLI command with PIP.
+## Installation
 * From source
 ```bash
-# checkout code and 'cd' to the project folder
-pip install -e .
+# checkout code and 'cd' to the project folder then
+$ pip install -e .
 ```
 * From a stable github release
 ```console
-pip install -e git://github.com/dcereijodo/dms-monitor.git@<tag>#egg=dms-monitor
+$ pip install -e git://github.com/dcereijodo/dms-monitor.git@<tag>#egg=dms-monitor
+```
+## Testing
+Testing uses the `pytest` framework and boto3 request stubbing for mocking the
+calls to AWS.
+```console
+pytest
 ```
 
 # TL;DR
