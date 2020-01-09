@@ -24,7 +24,7 @@ setup(
     install_requires=dependencies,
     entry_points={
         'console_scripts': [
-            'dms-monitor = dms_monitor.cli:main',
+            'dms-monitor = dms_monitor.cli:dms_monitor',
         ],
     },
     classifiers=[
