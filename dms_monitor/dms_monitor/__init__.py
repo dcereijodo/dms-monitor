@@ -79,7 +79,7 @@ class DMSWaiter:
     def start_and_wait_until_running(self):
         started_response = self.dms_client.start_replication_task(
             ReplicationTaskArn=self.arn,
-            StartReplicationTaskType='resume-processing'
+            StartReplicationTaskType='reload-target'
         )
         self.running.wait()
 
