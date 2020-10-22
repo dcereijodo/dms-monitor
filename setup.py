@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 dependencies = [
     'click',
-    'boto3>=1.9.97',
+    'boto3>=1.9.97,<=1.15.17',
 ]
 
 setup(
